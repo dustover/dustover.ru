@@ -999,7 +999,6 @@ section {
   }
 }
 
-
 /*Задаём общие параметры для всей страницы: шрифт и отступы*/
 body {
   /*text-align: center;*/
@@ -1024,6 +1023,7 @@ textarea {
   font-family: Verdana, Arial, sans-serif;
   font-size: 16px;
 }
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
