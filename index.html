@@ -505,19 +505,22 @@
     <div class="col-lg-5 col-md-8">
       <div class="form">
 
-  <form action="assets/vendor/php-email-form/mail.php" method="post">
-  <fieldset>
-  <legend>Оставьте сообщение:</legend>
-  <input type="text" name="name" placeholder="Ваше имя">
+  <form action="assets/vendor/php-email-form/mail.php" method="post" role="form" class="php-email-form">
 
-  <input type="text" name="email" placeholder="Ваша почта">
-
-  <input type="text" name="phone" placeholder="Номер телефона">
-
-  <textarea rows="10" cols="45" name="message"></textarea>
-
+    <div class="form-group">
+  <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+</div>
+                    <div class="form-group mt-3">
+  <input type="text" name="email" class="form-control" placeholder="Ваша почта">
+</div>
+     <div class="form-group mt-3">
+  <input type="text" name="phone" class="form-control" placeholder="Номер телефона">
+       </div>
+    <div class="form-group mt-3">
+  <textarea rows="10" cols="45" class="form-control" name="message"></textarea>
+    </div>
   <input type="submit" value="Отправить сообщение" placeholder="Сообщение">
-  </fieldset>
+
   </form>
       </div>
     </div>
