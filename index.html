@@ -502,34 +502,53 @@
       </div>
     </section><!-- End Contact Section -->
 
-    <div class="col-lg-5 col-md-8">
-      <div class="form">
-<!--    assets/vendor/php-email-form/mail.php-->
-    <h2>Форма обратной связи на PHP</h2>
-  <!--Данные введенные пользователем обрабатываются кодом в mail.php-->
-  <form action="assets/vendor/php-email-form/mail.php" method="post">
-  <!--Тег используется для группировки связанных элементов в форме-->
-  <fieldset>
-  <!--Тег задает заголовок для групповых элементов-->
-  <legend>Оставьте сообщение:</legend>
-  Ваше имя:
-  <!--Устанавливает однострочное текстовое поле ввода:-->
-  <input type="text" name="name">
-  <!--Используется для полей ввода, которые должны содержать адрес электронной почты.-->
-  E-mail:
-  <input type="text" name="email">
-  Номер телефона:
-  <input type="text" name="phone">
-  Сообщение:
-  <!--Тег разрешает многострочный ввод текста.-->
-  Текстовая область может содержать неограниченное количество символов-->
-  <textarea rows="10" cols="45" name="message"></textarea>
-  <!--Устанавливает кнопку для отправки данных формы в обработчик формы.-->
-  <input type="submit" value="Отправить сообщение">
-  </fieldset>
-  </form>
-      </div>
-    </div>
+<!--    <div class="col-lg-5 col-md-8">-->
+<!--      <div class="form">-->
+<!--&lt;!&ndash;    assets/vendor/php-email-form/mail.php&ndash;&gt;-->
+<!--    <h2>Форма обратной связи на PHP</h2>-->
+<!--  &lt;!&ndash;Данные введенные пользователем обрабатываются кодом в mail.php&ndash;&gt;-->
+<!--  <form action="assets/vendor/php-email-form/mail.php" method="post">-->
+<!--  &lt;!&ndash;Тег используется для группировки связанных элементов в форме&ndash;&gt;-->
+<!--  <fieldset>-->
+<!--  &lt;!&ndash;Тег задает заголовок для групповых элементов&ndash;&gt;-->
+<!--  <legend>Оставьте сообщение:</legend>-->
+<!--  Ваше имя:-->
+<!--  &lt;!&ndash;Устанавливает однострочное текстовое поле ввода:&ndash;&gt;-->
+<!--  <input type="text" name="name">-->
+<!--  &lt;!&ndash;Используется для полей ввода, которые должны содержать адрес электронной почты.&ndash;&gt;-->
+<!--  E-mail:-->
+<!--  <input type="text" name="email">-->
+<!--  Номер телефона:-->
+<!--  <input type="text" name="phone">-->
+<!--  Сообщение:-->
+<!--  &lt;!&ndash;Тег разрешает многострочный ввод текста.&ndash;&gt;-->
+<!--  Текстовая область может содержать неограниченное количество символов&ndash;&gt;-->
+<!--  <textarea rows="10" cols="45" name="message"></textarea>-->
+<!--  &lt;!&ndash;Устанавливает кнопку для отправки данных формы в обработчик формы.&ndash;&gt;-->
+<!--  <input type="submit" value="Отправить сообщение">-->
+<!--  </fieldset>-->
+<!--  </form>-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <!-- Создаём форму и указываем её обработчик и метод -->
+<form action="http://mihailmaximov.ru/projects/mail/post.php" method="post" name="form">
+  <!-- Поле ввода имени -->
+  <input name="name" type="text" placeholder="Ваше имя" />
+  <br>
+  <!-- Поле ввода почты  -->
+  <input name="email" type="text" placeholder="Ваша почта" />
+  <br>
+  <!-- Поле ввода для темы сообщения -->
+  <input size="30" name="header" type="text" placeholder="Тема" />
+  <br>
+  <!-- Текстовое поле для самого сообщения -->
+  <textarea cols="32" name="message" rows="5"> Текст сообщения
+  </textarea>
+  <br>
+  <!-- Кнопка с надписью «Отправить», которая запускает обработчик формы -->
+  <input type="submit" value="Отправить" />
+</form>
 
   </main><!-- End #main -->
 
